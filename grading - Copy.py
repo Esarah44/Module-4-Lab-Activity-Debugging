@@ -26,10 +26,16 @@ exam_one = int(input("Input exam grade one: "))
 
 exam_two = int(input("Input exam grade two: "))
 
+#exam_three = int(input("Input exam grade three: "))
 exam_three = str(input("Input exam grade three: "))
 
 grades = [exam_one, exam_two, exam_three]
 total = 0
+
+#Change type should be done before computing.
+#for grade in grades:
+#     total = total + grade
+
 for grade in grades:
      total = int(total) + int(grade)
 
@@ -43,11 +49,16 @@ elif avg >= 70 and avg < 80:
     letter_grade = "C"
 elif avg >= 60 and avg < 70:
     letter_grade = "D"
-elif avg >= 0 and avg < 60:
+elif avg >= 0 and avg < 60:     
     letter_grade = "F"
+#if-elif-else 
+#else:
+#     print("Invalid Grade")
 for grade in grades:
     print("Exam: " + str(grade))
-
+#No indentation because grade and average should be printed once.
+#print("Average: " + str(avg))
+#print("Grade: " + letter_grade)
     print("Average: " + str(avg))
 
     print("Grade: " + letter_grade)
